@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+nav{
+    margin: 10px 40px;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    border-radius: 4px;
+    color:white;
+    position: sticky;
+    top:10px;
+    background-color: black;
+    align-items: center;
+}
+.logo{
+    display:flex;
+}
+.logo h4{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.nav_links{
+    display: flex;
+    gap:30px;
+}
+.nav_links a,.info a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.nav_links button{
+    min-width:84px;
+    padding: 5px 10px;
+    background-color: black;
+    border: none;
+}
+.nav_links button:hover{
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 4px;
+}
+#one,#two{
+    min-height:95vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    max-width: 450px;
+}
+.one_con{
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.info h4{
+    font-size: 19px;
+}
+.info h1{
+    font-size: 45px;
+}
+.img img{
+    height:400px;
+}
+.info{
+    max-width: 400px;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.info p{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+    color: grey;
+    margin:20px 0;
+}
+.info button{
+    background-color: black;
+    color: white;
+    padding:5px 10px;
+    border: solid 2px white;
+    border:solid 2px white;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.info button:hover{
+    cursor: pointer;
+    border: solid 2px rgb(87, 227, 223);
+}
+.two_con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.two_con h2{
+    font-size: 30px;
+}
+.pro{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap:40px;
+}
+.pro div{
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: end;
+    
+}
+.pro_con1{
+    background-image: url(Images/life_timer.png);
+}
+.pro_con2{
+    background-image: url(Images/To_do.png);
+}
+.pro_con3{
+    background-image: url(Images/calci.png);
+}
+.pro_con4{
+    background-image: url(Images/qr.png);
+}
+.pro_con5{
+    background-image: url(Images/pass.png);
+}
+.pro a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.pro button{
+    width: 200px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+.pro button:hover{
+    border: solid 2px aqua;
+}
+#three{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.three_con{
+    max-width: 700px;
+    margin:0 30px;
+    color: white;
+}
+.three_con h2{
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.three_con h4{
+    letter-spacing: 1px;
+    line-height: 1.9;
+    text-align: justify;
+    color: grey;
+}
+.three_con h1{
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+#four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-bottom: 20px;
+}
+#four h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+#four i{
+    font-size: 25px;
+    margin:20px;
+}
+.toggle{
+    font-size: 23px;
+    border:none;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    right:-20px;
+    top:7px;
+    border:solid 2px aqua;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+@media (max-width:733px){
+    .one_con{
+        gap:30px;
+    }
+    .pro{
+        justify-content: space-evenly;
+    }
+    .nav_links{
+        gap:10px;
+    }
+    #four h1{
+        font-size: 25px;
+    }
+}
+@media(max-width:638px){
+    .img img{
+        height:300px;
+        margin-bottom: 60px;
+    }
+    .hide{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav_links{
+        flex-direction: column;
+        display: none;
+    }
+}
+.unhide{
+    display: flex;
+}

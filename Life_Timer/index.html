@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/clock.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ee1b88f28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="one">
+        <div class="timer border" id="ini_message">
+            <h1>Kindly Enter Your Date Of Birth</h1>
+        </div>
+        <div class="timer hide" id="time_dis">
+            <h1>Life Journey Covered, Till now</h1>
+            <div class="time_labels">
+                <div class="years">
+                    <h1>00</h1>
+                    <h2>Years</h2>
+                </div>
+                <div class="months">
+                    <h1>00</h1>
+                    <h2>Months</h2>
+                </div>
+                <div class="days">
+                    <h1>00</h1>
+                    <h2>Days</h2>
+                </div>
+                <div class="hours">
+                    <h1>00</h1>
+                    <h2>Hours</h2>
+                </div>
+                <div class="minutes">
+                    <h1>00</h1>
+                    <h2>Minutes</h2>
+                </div>
+                <div class="seconds">
+                    <h1>00</h1>
+                    <h2>Seconds</h2>
+                </div>
+            </div>
+        </div>
+        <div class="settings">
+            <div class="toogler">
+                <i id="toggler" class="fa-solid fa-gear" style="color: #ffffff;"></i>
+            </div>
+            <div class="settings_bar hide">
+                <input type="date" id="date">
+                <button for="date">Submit</button>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

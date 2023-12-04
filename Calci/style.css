@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary:rgba(255, 255, 255, 0.466);
+    --secondary:rgba(255, 255, 255, 0.488);
+    --solid:black;
+}
+.dark{
+     --primary:rgba(0, 0, 0, 0.466);
+    --secondary:rgba(0, 0, 0, 0.488);
+    --solid:white;
+}
+.one{
+    width:100vw;
+    height:100vh;
+     background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    display: grid;
+    place-items: center;
+}
+.con{
+    max-width:380px;
+    border: solid 2px rgba(0, 0, 0, 0.058);
+    background-color: var(--primary);
+    border-radius:10px;
+    margin: 20px;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.display div{
+    width: 100%;
+    max-width:340px;
+    height:60px;
+    border: solid 2px rgba(0, 0, 0, 0.038);
+    border-radius: 4px;
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+    text-align: right;
+    position: relative;
+    color: rgb(183, 1, 1);
+}
+.display h2{
+    position: absolute;
+    right:2px;
+    bottom: 2px;
+}
+.buttons button{
+    width:60px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid 2px rgba(255, 255, 255, 0);
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+    font-size: 16px;
+    color: var(--solid);
+}
+.buttons button:hover{
+    color: red;
+    cursor: pointer;
+    background-color: var(--solid);
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+#grow button{
+    width:152px
+}
+.lmode{
+    background-image: url(Assets/light.png);
+}
+#mode{
+    font-size: 26px;
+}
+@media(max-width:440px){
+    .con{
+        max-width:300px;
+    }
+    .display div{
+        width: 100%;
+        max-width:340px;
+        height:60px;
+    }
+    .buttons button{
+        width:47px;
+        height: 50px;
+    }
+    #grow button{
+        width:118px
+    }
+    .dmode{
+        height: 20px;
+    }
+}

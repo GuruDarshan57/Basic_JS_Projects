@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3874570f12.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="one">
+        <div class="con">
+            <div class="head">
+                <h1>Password Generator</h1>
+            </div>
+            <div class="display">
+                <h2>&#128274;</h2>
+            </div>
+            <div class="range slide_container">
+                <h3>Password Length 10</h3>
+                <input type="range" min="5" max="20" value="10" class="slider" id="myRange">
+            </div>
+            <div class="checks">
+                <div class="check">
+                    <label>Include uppercase</label>
+                    <input type="checkbox" id="upper_case">
+                </div>
+                <div class="check">
+                    <label>Include numbers</label>
+                    <input type="checkbox" id="number">
+                </div>
+                <div class="check">
+                    <label>Include symbols</label>
+                    <input type="checkbox" id="symbol">
+                </div>
+                <div class="gen">
+                    <button>Generate</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

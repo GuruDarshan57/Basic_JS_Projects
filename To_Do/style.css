@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.one{
+    width:100vw;
+    min-height:100vh;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    display:grid;
+    place-items: center;
+}
+.container{
+    width: 100%;
+    max-width:400px;
+    min-height:180px;
+    background-color: rgba(0, 0, 0, 0.099);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.285);
+    border-radius: 20px;;
+    padding:20px 20px;
+    margin:20px;
+}
+.head{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom:10px;
+    margin-top: 30px;
+}
+.head h1{
+    font-size: 27px;
+}
+.head img{
+    width:35px;
+    height: 30px;
+}
+.task_inp{
+    display: flex;
+    gap: 10px;
+    
+}
+.task_inp input{
+    flex:0.9;
+    padding: 5px;
+    font-size: 13px;
+    border:solid 2px rgba(255, 255, 255, 0);
+    outline: none;
+    border-radius: 4px;
+    background-color:rgba(255, 255, 255, 0.668);
+}
+.task_inp button{
+    flex:0.3;
+    border: solid 2px rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    background-color: 
+    #F3B664;
+}
+.task_inp button:hover{
+    border: solid 2px black;
+    cursor: pointer;
+}
+.tasks{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tasks div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:solid 2px rgba(0, 0, 0, 0.219);
+    background-color: rgba(0, 255, 47, 0.121);
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.tasks div:hover{
+    border: solid 2px black;
+}
+.tasks button{
+    width:25px;
+    height: 25px;
+    background-image: url(assets/wrong.png);
+    background-size: cover;
+    background-position: center;
+    border:none;
+    border-radius: 4px;
+}
+.tasks button:hover{
+    border:solid 2px black;
+    cursor:pointer
+}
+.check{
+    text-decoration: line-through;
+    background-color: rgba(255, 0, 0, 0.138);
+}
+@media(max-width:470px){
+    .container{
+        max-width:350px
+    }
+}

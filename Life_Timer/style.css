@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+}
+.one{
+    height:100vh;
+    width:100vw;
+    background-image: url(Assets/Bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+.timer{
+    padding: 10px;
+    font-family: "Oswald",sans-serif;
+    text-align: center;
+    margin:10px
+}
+.border{
+    border:solid 2px white;
+}
+.timer h1{
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: white;
+}
+.settings{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    gap:10px;
+    font-size: 25px;
+    align-items: center;
+}
+.settings input{
+    padding: 2px;
+    width:150px;
+    text-align: center;
+    text-transform: uppercase;
+    border: solid 2px white;;
+    border-radius: 4px;
+}
+.settings button{
+    width:60px;
+    padding: 2px;
+    background-color: rgb(250, 200, 106);
+    border: solid 2px rgb(250, 200, 106);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px black;
+}
+.settings button:hover{
+    background-color: black;
+    color: white;
+}
+.hide{
+    display: none;
+}
+.time_labels{
+    display: flex;
+    gap: 30px;
+}
+.time_labels h1{
+    font-size: 50px;
+    color: aqua;
+}
+.time_labels h2{
+    font-size: 40px;
+    color:white;
+    letter-spacing: 3px;
+}
+.blink{
+    border:solid 2px aqua;
+}
+@media(max-width:900px){
+    .timer h1{
+        font-size: 45px;
+        letter-spacing: 4px;
+    }
+    .time_labels h1{
+        font-size: 40px;
+    }
+    .time_labels h2{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .time_labels{
+        gap:15px
+    }
+
+}
+@media(max-width:720px){
+    .timer h1{
+        font-size: 27px;
+        letter-spacing: 4px;
+    }
+    .time_labels h1{
+        font-size: 25px;
+    }
+    .time_labels h2{
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+}
+@media(max-width:438px){
+    .timer h1{
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+    .time_labels h1{
+        font-size: 18px;
+    }
+    .time_labels h2{
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+}
