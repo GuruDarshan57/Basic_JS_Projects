@@ -15,8 +15,8 @@ button.addEventListener("click", () => {
     pass.innerHTML = ""
     const upr = "QWERTYUIOPASDFGHJKLZXCVBNM"
     const lwr = "qwertyuiopasdfghjklzxcvbnm"
-    const num = "1234567890"
-    const sym = "!@#$%^&*()_?/"
+    const num = "12345678908765321045632178"
+    const sym = "!@#$%^&*()_?/=-<>\|;:€~`[]"
     let str = lwr + ((c1.checked) ? upr : "") + ((c2.checked) ? num : "") + ((c3.checked) ? sym : "")
     let len = str.length
     for (let i = 0; i < slider.value; i++) {
